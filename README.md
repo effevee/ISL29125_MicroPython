@@ -3,6 +3,7 @@
 ## Sensor breakout boards
 
 [SparkFun RGB Light Sensor ISL29125](https://www.sparkfun.com/products/12829)
+
 ![SparkFun](images/sparkfun_ISL29125.jpg)
 
 [CJMCU-29125 ISL29125 RGB Color Light Sensor](https://www.banggood.com/CJMCU-29125-ISL29125-RGB-Color-Light-Sensor-Red-Green-Blue-Three-color-Light-Sensor-Module-p-1236412.html?cur_warehouse=CN)
@@ -62,7 +63,7 @@ __!! Different settings for the same config register are ORed together !!__
 ## MicroPython library
 
 This library is based on the [ISL29125_Python library](https://github.com/dylanshuler11/ISL29125_Python) by dylanshuler11. 
-He ported the  [SparkFun_ISL29125_Breakout_Arduino_Library](https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library) to Python. Thanks for the heavy lifting. The port to MicroPython was not to difficult.
+He ported the  [SparkFun_ISL29125_Breakout_Arduino_Library](https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library) to Python. Thanks for the heavy lifting. The port to MicroPython was not too difficult.
 
 [Micropython library](isl29125.py)
 
