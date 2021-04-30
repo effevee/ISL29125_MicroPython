@@ -6,9 +6,11 @@
 ![SparkFun](images/sparkfun_ISL29125.jpg)
 
 [CJMCU-29125 ISL29125 RGB Color Light Sensor](https://www.banggood.com/CJMCU-29125-ISL29125-RGB-Color-Light-Sensor-Red-Green-Blue-Three-color-Light-Sensor-Module-p-1236412.html?cur_warehouse=CN)
+
 ![CJMCU-29125](images/cjmcu-19125.jpg)
 
 [Datasheet ISL29125 sensor chip](resources/isl29125_datasheet.pdf)
+
 [Schematic ISL29125 breakout board](resources/ISL29125_Breakout-v10.pdf)
 
 
@@ -31,6 +33,7 @@ VCC|Power (3.3V).
 SCL|I2C clock.
 SDA|I2C data.
 INT|Interrupt (active LOW) It remains at 3.3V until an interrupt condition is met, at which point it goes LOW (ground)
+
 __!! This sensor is not 5V tolerant !!__
 
 ## Sensor config registers
