@@ -63,12 +63,43 @@ __!! Different settings for the same config register are ORed together !!__
 ## MicroPython library
 
 This library is based on the [ISL29125_Python library](https://github.com/dylanshuler11/ISL29125_Python) by dylanshuler11. 
-He ported the  [SparkFun_ISL29125_Breakout_Arduino_Library](https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library) to Python. Thanks for the heavy lifting. The port to MicroPython was not too difficult.
+He ported the  [SparkFun_ISL29125_Breakout_Arduino_Library](https://github.com/sparkfun/SparkFun_ISL29125_Breakout_Arduino_Library) to Python. Thanks for the heavy lifting :-). The port to MicroPython was not too difficult.
 
 [Micropython library](isl29125.py)
 
-[Example code](test_isl29125.py)
+## Usage examples
 
-This code has been tested with ESP32 running MicroPython v1.15. It should also run with ESP8266 and Raspberry Pi Pico.
+This code has been tested on an ESP32 running MicroPython v1.15 and a Raspberry Pi PICO running MicroPython v1.13. It should also run on other microcontrollers supported by MicroPython with minimal modifications.
+
+#### [ESP32](esp32_isl29125.py)
+
+```
+MicroPython v1.15 on 2021-04-18; ESP32 module with ESP32
+Type "help()" for more information.
+
+>>> from machine import Pin, SoftI2C
+>>> from isl29125 import ISL29125
+>>> i2c = SoftI2C(scl=Pin(22), sda=Pin(21), freq=400000)
+>>> rgbsensor = ISL29125(i2c)
+configuration written
+>>> print(rgbsensor.rgbVal)
+[238, 407, 326]
+>>>
+```
+
+#### [Raspberry Pi Pico](pico_isl29125.py)
+
+```
+MicroPython v1.13-290-g556ae7914 on 2021-01-21; Raspberry Pi Pico with RP2040
+Type "help()" for more information.
+>>> from machine import Pin, I2C
+>>> from isl29125 import ISL29125
+>>> i2c = I2C(0, scl=Pin(1), sda=Pin(0), freq=400000)
+>>> rgbsensor = ISL29125(i2c)
+configuration written
+>>> print(rgbsensor.rgbVal)
+[61, 76, 61]
+>>> 
+```
 
 Enjoy :)
