@@ -71,7 +71,7 @@ He ported the  [SparkFun_ISL29125_Breakout_Arduino_Library](https://github.com/s
 
 This code has been tested on an ESP32 running MicroPython v1.15 and a Raspberry Pi PICO running MicroPython v1.13. It should also run on other microcontrollers supported by MicroPython with minimal modifications.
 
-#### [ESP32](esp32_isl29125.py)
+#### [ESP32](examples/esp32_isl29125.py)
 
 ```
 MicroPython v1.15 on 2021-04-18; ESP32 module with ESP32
@@ -87,7 +87,7 @@ configuration written
 >>>
 ```
 
-#### [Raspberry Pi Pico](pico_isl29125.py)
+#### [Raspberry Pi Pico](examples/pico_isl29125.py)
 
 ```
 MicroPython v1.13-290-g556ae7914 on 2021-01-21; Raspberry Pi Pico with RP2040
