@@ -54,7 +54,7 @@ __(*) default value__
 
 Register|Example|Description
 :------:|-----------|-----------
-CONFIG_1|CFG1_MODE_RGB __OR__ CFG1_10KLUX|Sample RGB values in bright conditions.
+CONFIG_1|CFG1_MODE_RGB __OR__ CFG1_10KLUX|Sample RGB values under normal light conditions.
 CONFIG_2|CFG2_IR_ADJUST_HIGH|Set IR filtering to high.
 CONFIG_3|CFG3_R_INT __OR__ CFG3_INT_PRST8|Trigger interrupt on red values set to highest sensitivity.
 
@@ -92,6 +92,7 @@ configuration written
 ```
 MicroPython v1.13-290-g556ae7914 on 2021-01-21; Raspberry Pi Pico with RP2040
 Type "help()" for more information.
+
 >>> from machine import Pin, I2C
 >>> from isl29125 import ISL29125
 >>> i2c = I2C(0, scl=Pin(1), sda=Pin(0), freq=400000)
